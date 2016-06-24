@@ -12,9 +12,19 @@
  * Log both the random number grade and its corresponding letter grade to the console.
  */
 
- var testScore;
+ var testScore  = Math.round(Math.random() * 100);
 
-
+ if (testScore >= 90) {
+   console.log("you scored a " + testScore + ". You got an A!");
+ } else if (testScore >= 80){
+   console.log("you scored a " + testScore + ". You got an B!");
+ } else if (testScore >= 70){
+   console.log("you scored a " + testScore + ". You got an C!");
+} else if (testScore >= 60){
+  console.log("you scored a " + testScore + ". You got an D!");
+} else {
+    console.log("Ew. you scored a " + testScore + ". You got an F!");
+}
 /**
  * Question 2
  * Create a second random test score between 0 and 100. Calculate the average of the two test scores.
@@ -22,9 +32,9 @@
  *
  */
 
-var secondTestScore;
+var secondTestScore = Math.random() * 100;
 
-var average;
+var average = Math.round(testScore + secondTestScore / 2);
 
 // Use a ternary to assign the message.
-var message;
+var message = (average > 80) ? console.log("Score: " + average + ". Well Done!") : console.log("Score: " + average + ". Better luck next time");

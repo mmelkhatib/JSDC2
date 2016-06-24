@@ -2,7 +2,7 @@
  * Question 1
  * Create an empty array and store it in a variable named code.
  */
-
+var code = [];
  // Your code here
 
  /**
@@ -12,8 +12,10 @@
   * 'i', 't', 'l', 'a', 'v', 'o', 'x', 'e', 'r',
   * 'o', 'm', 'c'
   */
-
 // Your code here
+code.push('x', 'u', 's', 'a', 'e', 'l', 'p', 'e', 'e', 'n');
+code.push('i', 't', 'l', 'a', 'v', 'o', 'x', 'e', 'r');
+code.push('o', 'm', 'c');
 
 /**
  * Question 3
@@ -21,14 +23,17 @@
  * Hint: You may need to look up a method we haven't talked about.
  */
 
+
 // Your code here
+code.shift();
+code.pop();
 
 /**
  * Question 4
  * Reverse the array.
  */
-
 // Your code here
+code.reverse();
 
 /**
  * Question 5
@@ -37,14 +42,16 @@
  */
 
 // Your code here
-
+var lastIndex = code.length - 1;
+code[lastIndex] = 'e';
 /**
  * Question 6
  * Replace the 5th element and 14th element with space characters.
  * Hint: remember indexes start at 0!
  */
-
 // Your code here
+code[4] = ' ';
+code[14] = ' ';
 
 /**
  * Question 7
@@ -53,3 +60,5 @@
  */
 
  // Your code here
+ var message = code.join("");
+ console.log(message);
