@@ -4,8 +4,13 @@
  * Write a function that logs a random day of the week (i.e. 'Thursday')
  *
  */
+function weekday() {
+var day = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+var randomDay= day[Math.floor(Math.random() * day.length)];
+console.log(randomDay);
+}
 
-
+weekday();
 /*
 *
 * Question 2

@@ -15,7 +15,7 @@ var words = [
   'whispering',
   'astronautically',
   'typical',
-  'stretch'
+  'stretch',
   'side',
   'upset',
   'river',
@@ -40,15 +40,26 @@ var words = [
 // ##### Step 1:
 // Construct a for loop that iterates through the word array, and `console.log()`'s out the length of each string.
 
+for (var i = 0; i < words.length; i++) {
+  var wordCount = words[i];
+   // more statements
+
 
 // ##### Step 2:
 // Add an `if/else` statement that logs the string `"fuzz"` if the value being iterated over has a length divisible by `3`; otherwise, log out the length.
 // Hint: Remember the "modulus" operator.
-
-
+if (wordCount.length % 3 === 0 && wordCount.length % 5 === 0) {
+  console.log("Fuzzbizz");
+} else if (wordCount.length % 5 === 0){
+  console.log("Bizz");
+} else if (wordCount.length % 3 === 0) {
+  console.log("Fuzz");
+} else {
+  console.log(wordCount.length);
+}
 // ##### Step 3:
 // Add an `else if` clause that logs the string `"bizz"` if the value being iterated over has a length divisible by `5`.
-
+}
 
 // ##### Step 4:
 // Add an additional clause that logs the string `"fuzzbizz"` if the value being iterated over has a length divisible by both `3` and `5`.

@@ -6,7 +6,12 @@
  *
  */
 
+function rollDice(){
+var roll = Math.floor(Math.random() * 6) + 1;
+return roll;
+}
 
+rollDice();
 
 /*
  *
@@ -15,3 +20,16 @@
  * Call your function.
  *
  */
+function rollDices(rolls){
+  var diceSum = 0;
+  for (var i = 0; i < rolls; i++) {
+    var diceRolls = rollDice();
+
+    console.log(diceRolls);
+    diceSum += diceRolls;    
+}
+
+  console.log(diceSum);
+}
+
+rollDices(6);
