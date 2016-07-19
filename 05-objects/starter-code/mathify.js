@@ -7,3 +7,31 @@
  * Mathify should also have functions for add, subtract, divide and multiply. Each function should take
  * two parameters and return the result of the operation.
  */
+
+
+ var Mathify = {
+    one: 1,
+    two: 2,
+    three: 3,
+    four:4,
+    five: 5,
+    six: 6,
+    seven:7,
+    eight: 8,
+    nine: 9,
+    ten: 10,
+    add: function(x, y) {
+    return x + y;
+  },
+    subtract: function(x, y) {
+    return x - y;
+  },
+    divide: function(x, y) {
+    return x/y;
+  },
+    multiply: function(x, y) {
+    return x * y;
+  }
+
+          }
+console.log(Mathify.multiply(Mathify.ten, Mathify.nine));
